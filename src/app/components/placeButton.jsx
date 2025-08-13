@@ -21,7 +21,7 @@ export default function PlaceButton({ nextPath, place }) {
       <div className="flex justify-between items-center mb-4">
         <p className="font-bold mr-8">{place}</p>
         <Link
-          className="bg-[#6EC6E9] py-3 inline-flex items-center justify-center rounded-lg w-1/2 cursor-pointer hover:bg-[#5ab5d4]"
+          className="bg-[var(--primary-color)] py-3 inline-flex items-center justify-center rounded-lg w-1/2 cursor-pointer hover:bg-[var(--hover-color)]"
           href={`${pathname}/${nextPath}`}
           onClick={() => setPlaceData(place)}
         >

@@ -49,21 +49,21 @@ export default function InputData() {
           <div className="mb-4">
             {currentEmail != "" && umbrellaID != "" && error == "" ? (
               <Link
-                className="bg-[#6EC6E9] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold cursor-pointer hover:bg-[#5ab5d4]"
+                className="bg-[var(--primary-color)] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold cursor-pointer hover:bg-[var(--hover-color)]"
                 href={`${pathname}/confirm`}
                 onClick={() => setEmail(currentEmail)}
               >
                 次へ
               </Link>
             ) : (
-              <p className="bg-[#E0E2E3] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold text-[#8C8F91] cursor-not-allowed">
+              <p className="bg-[var(--gray-color)] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold text-[var(--secondary-font-color)] cursor-not-allowed">
                 次へ
               </p>
             )}
           </div>
           <div>
             <button
-              className="bg-[#C5C9CC] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold cursor-pointer hover:bg-[#B1B5B8]"
+              className="bg-[var(--gray-color)] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold cursor-pointer hover:bg-[var(--hover-gray-color)]"
               onClick={() => router.back()}
             >
               戻る

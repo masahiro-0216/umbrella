@@ -53,7 +53,7 @@ export default function CompletePage({ action }) {
       <div>
         <Link
           href={"/"}
-          className="bg-[#6EC6E9] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold cursor-pointer hover:bg-[#5ab5d4] mb-4"
+          className="bg-[var(--primary-color)] py-3 w-full inline-flex items-center justify-center rounded-lg font-bold cursor-pointer hover:bg-[var(--hover-color)] mb-4"
         >
           トップに戻る
         </Link>

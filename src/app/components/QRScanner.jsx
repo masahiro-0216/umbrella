@@ -70,22 +70,22 @@ export default function QRScanner() {
         <div
           id="reader"
           ref={readerRef}
-          className="w-[300px] h-[220px] rounded-xl bg-[#6EC6E9] mb-3"
+          className="w-[300px] h-[220px] rounded-xl bg-[var(--primary-color)] mb-3"
         />
         <button
           onClick={startScan}
           disabled={isScanning}
-          className={`rounded-lg bg-[#6EC6E9] px-6 py-3 text-white font-bold text-lg transition-colors w-[300px]
+          className={`rounded-lg bg-[var(--primary-color)] px-6 py-3 text-white font-bold text-lg transition-colors w-[300px]
           ${
             isScanning
               ? "cursor-not-allowed opacity-60"
-              : "cursor-pointer hover:bg-[#5ab5d4]"
+              : "cursor-pointer hover:bg-[var(--hover-color)]"
           }`}
         >
           カメラで読み取る
         </button>
         {umbrellaID && (
-          <p className="mt-4 font-bold text-gray-900">
+          <p className="mt-4 font-bold text-[var(--primary-font-color)]">
             読み取り結果: {umbrellaID}
           </p>
         )}
